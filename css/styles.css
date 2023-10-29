@@ -119,9 +119,13 @@
 }
 
 #icon-borrar {
-    margin-right: 4px;
     padding: 0;
-    width: 30px;
+    margin: 0;
+    width: 25px;
+}
+
+.linea-botones {
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
