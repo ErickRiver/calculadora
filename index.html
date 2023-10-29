@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link type="text/css" rel="stylesheet" href="..\..\recursos\bootstrap\css\bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../recursos/font_awesome/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="../../recursos/sweetalert2/sweetalert2.min.css">
+    <link type="text/css" rel="stylesheet" href="..\..\recursos\sweetalert2\sweetalert2.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 id="titulo">CALCULADORA</h1>
+        <div id="calculadora">
+            <div class="row">
+                <div class="text-center mt-2">
+                    <button type="button" id="tema"></button>
+                    <input type="text" id="pantalla" placeholder="">
+                </div>
+                <div class="text-center mt-3">
+                    <input type="button" class="boton clear" value="C">
+                    <input type="button" class="boton operador" value="x²">
+                    <input type="button" class="boton operador" value="%">
+                    <input type="button" class="boton operadorBasico" value="÷">
+                </div>
+                <div class="text-center">
+                    <input type="button" class="boton numero" value="7">
+                    <input type="button" class="boton numero" value="8">
+                    <input type="button" class="boton numero" value="9">
+                    <input type="button" class="boton operadorBasico" value="x">
+                </div>
+                <div class="text-center">
+                    <input type="button" class="boton numero" value="4">
+                    <input type="button" class="boton numero" value="5">
+                    <input type="button" class="boton numero" value="6">
+                    <input type="button" class="boton operadorBasico" value="-">
+                </div>
+                <div class="text-center">
+                    <input type="button" class="boton numero" value="1">
+                    <input type="button" class="boton numero" value="2">
+                    <input type="button" class="boton numero" value="3">
+                    <input type="button" class="boton operadorBasico" value="+">
+
+                    <div class="text-center">
+                        <input type="button" class="boton numero" value=".">
+                        <input type="button" class="boton numero" value="0">
+                        <button type="button" class="boton borrar">
+                            <img id="icon-borrar" src="delete-left-solid.svg" alt="Borrar">
+                        </button>
+                        <input type="button" class="boton resultado" value="=">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Erick_Web\web\recursos\sweetalert2\sweetalert2.js"></script>
+    <script src="../../recursos/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../recursos/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="css/styles.css"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+#calculadora {
+    width: 350px;
+    height: auto;
+    background-color: #191919;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calculadora.white {
+    background-color: #FFCA28;
+}
+
+.boton {
+    display: inline-block;
+    margin: 2px;
+    border-radius: 100%;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    max-width: 66px;
+    height: 65px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-stretch: expanded;
+    transition-duration: .2s;
+}
+
+.boton:active,
+.boton:focus {
+    opacity: .5;
+}
+
+.numero,
+.borrar {
+    background-color: #00ffff;
+}
+
+.boton.numero.white,
+.boton.borrar.white {
+    background-color: #FFF8E1;
+}
+
+.operador {
+    background-color: #00cbcc;
+}
+
+.boton.operador.white {
+    background-color: #000;
+    color: #FFF
+}
+
+.operadorBasico {
+    background-color: #ff0534;
+}
+
+.boton.operadorBasico.white {
+    background-color: #000;
+    color: #FFF;
+}
+
+#pantalla {
+    font-weight: bold;
+    font-stretch: expanded;
+    direction: rtl;
+    font-size: 35px;
+    width: 95%;
+    height: 125px;
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+}
+
+#pantalla.white {
+    color: #000;
+}
+
+#pantalla:focus {
+    outline: none;
+}
+
+#tema {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+    border-color: azure;
+    float: right;
+    border-radius: 100%;
+}
+
+@keyframes aparecerDesdeArriba {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#titulo {
+    font-weight: bold;
+    font-stretch: expanded;
+    font-size: 180px;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: aparecerDesdeArriba 2s ease-in-out;
+}
+
+#icon-borrar {
+    margin-right: 4px;
+    padding: 0;
+    width: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: #191919;
+    }
+
+    body.white {
+        background-color: #FFCA28;
+    }
+
+    #titulo {
+        display: none;
+    }
+
+    #calculadora {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .boton {
+        width: 70px;
+        height: 69px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #calculadora {
+        width: 100%;
+    }
+
+    .boton {
+        width: 60px;
+        height: 59px;
+    }
+}
